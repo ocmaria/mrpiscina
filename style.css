@@ -22,3 +22,6 @@ h3{font-family:Manrope,sans-serif;font-size:25px;font-weight:500;letter-spacing:
 .group-logo{display:block;width:260px;max-width:100%;margin-top:24px;background:#fff;border-radius:3px;padding:0 6px}.group-logo img{display:block;width:100%;height:auto}.group-logo:focus-visible{outline:3px solid #5ce0d4;outline-offset:5px}@media(max-width:760px){.group-logo{width:230px;margin-top:20px}}
 
 footer .group-membership{flex-basis:100%;width:100%;margin:0;font-size:14px;line-height:1.6}footer .group-membership a{text-decoration:underline;text-underline-offset:3px;font-weight:600}
+
+/* Descriptive heading, sized for the existing hero. */
+.hero h1{font-size:clamp(36px,3.4vw,54px);letter-spacing:-1.8px;line-height:1.16}@media(max-width:760px){.hero h1{font-size:clamp(34px,8vw,46px);letter-spacing:-1.3px}}
