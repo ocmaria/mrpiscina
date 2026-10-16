@@ -28,3 +28,6 @@ footer .group-membership{flex-basis:100%;width:100%;margin:0;font-size:14px;line
 
 /* Obras destacadas y proceso · octubre 2026 */
 .featured-projects{padding-top:72px;padding-bottom:72px}.featured-project{background:#edf5f6;overflow:hidden}.featured-image{display:block;overflow:hidden}.featured-image img{display:block;width:100%;aspect-ratio:4/3;height:auto;object-fit:cover}.featured-copy{padding:25px}.featured-copy .eyebrow{font-size:11px;color:#16818c;margin-bottom:12px}.featured-copy h3{margin:0 0 16px;font-size:24px}.featured-links{display:flex;flex-wrap:wrap;gap:18px 32px;margin-top:28px}.process-section>.text-link{margin-top:28px}.process-section .section-heading .text-link{font-size:inherit;padding-bottom:2px}.hero-note{max-width:340px;line-height:1.7}@media(max-width:980px) and (min-width:761px){.featured-projects .card-grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.featured-projects{padding-top:48px;padding-bottom:48px}.featured-copy{padding:22px}.featured-projects h2{font-size:34px}}
+
+/* Tamaño del logo MRPOOL */
+.header .brand img{width:265px;height:auto}.footer-brand img{height:auto}@media(max-width:760px){.header .brand img{width:clamp(135px,38vw,180px)}.header{gap:8px}.header-contact{padding:0;font-size:11px}.menu-toggle{padding:8px;font-size:12px}}
