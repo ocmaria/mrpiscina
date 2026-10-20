@@ -22,3 +22,7 @@ modal.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){e.preventDefault();
 modal.addEventListener('click',e=>{if(e.target===modal)modal.close()});
 modal.addEventListener('close',()=>{document.body.style.overflow='';returnFocus?.focus()});
 render();
+
+function openLinkedWork(){const id=decodeURIComponent(location.hash.slice(1));const work=document.getElementById(id);if(work&&work.matches('details.gallery-work')){work.open=true;work.scrollIntoView({block:'start'});}}
+window.addEventListener('hashchange',openLinkedWork);
+openLinkedWork();
