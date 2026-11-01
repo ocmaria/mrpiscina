@@ -61,9 +61,3 @@ footer .group-membership{flex-basis:100%;width:100%;margin:0;font-size:14px;line
 
 /* Espacio para las cuatro categorías de la cabecera. */
 @media(min-width:761px) and (max-width:1200px){.header{flex-wrap:wrap;height:auto;min-height:100px;padding-top:20px;padding-bottom:20px}.header #main-nav{order:4;width:100%;justify-content:center;gap:24px}}
-
-/* Animación de entrada del logo: el original conserva su tamaño y enlace. */
-.header .brand{position:relative}
-.header .brand.logo-animating>img{opacity:0}
-.header .brand .logo-motion{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
-@media(prefers-reduced-motion:reduce){.header .brand.logo-animating>img{opacity:1}.header .brand .logo-motion{display:none}}
