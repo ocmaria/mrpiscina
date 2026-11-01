@@ -58,3 +58,6 @@ footer .group-membership{flex-basis:100%;width:100%;margin:0;font-size:14px;line
 .header #main-nav .nav-submenu a{display:block;padding:12px 14px;border:0;border-radius:6px;white-space:normal;font-size:14px;line-height:1.5}
 .header #main-nav .nav-submenu a:hover,.header #main-nav .nav-submenu a[aria-current="page"]{background:#edf5f6;color:#103d52}
 @media(max-width:760px){.header #main-nav{align-items:stretch}.nav-group{width:100%}.nav-group>summary{justify-content:space-between;padding:14px 0;border-top:1px solid #e1e9ed;font-size:16px}.nav-submenu{position:static;min-width:0;width:100%;max-width:none;margin:0 0 12px;padding:6px;background:#edf5f6;box-shadow:none}.header #main-nav .nav-submenu a{font-size:15px;padding:12px}.header #main-nav .nav-submenu a:hover,.header #main-nav .nav-submenu a[aria-current="page"]{background:#ddf5f0}}
+
+/* Espacio para las cuatro categorías de la cabecera. */
+@media(min-width:761px) and (max-width:1200px){.header{flex-wrap:wrap;height:auto;min-height:100px;padding-top:20px;padding-bottom:20px}.header #main-nav{order:4;width:100%;justify-content:center;gap:24px}}
