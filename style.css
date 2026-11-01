@@ -44,3 +44,17 @@ footer .group-membership{flex-basis:100%;width:100%;margin:0;font-size:14px;line
 .header-contact:focus-visible{outline:3px solid #08aeb1;outline-offset:4px}
 @media(max-width:760px){.header-contact{flex-basis:100%;width:100%;min-height:62px;padding:25px 16px 10px 52px;font-size:20px;text-align:center}.header-contact::before{left:calc(50% - 98px)}.header-contact::after{left:0;width:100%;top:8px;text-align:center}}
 @media(prefers-reduced-motion:reduce){.header-contact{transition:none}}
+
+/* Navegación por categorías: controles nativos de apertura. */
+.header{position:relative;z-index:25}
+.header #main-nav{align-items:center}
+.nav-group{position:relative}
+.nav-group>summary{display:flex;align-items:center;gap:7px;padding:10px 0;list-style:none;cursor:pointer;white-space:nowrap}
+.nav-group>summary::-webkit-details-marker{display:none}
+.nav-group>summary::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+.nav-group[open]>summary::after{transform:translateY(2px) rotate(225deg)}
+.nav-group>summary:hover,.nav-group[open]>summary{color:#04888f}
+.nav-submenu{position:absolute;top:100%;left:-18px;min-width:285px;max-width:calc(100vw - 32px);padding:10px;background:#fff;border:1px solid #dce7e9;border-radius:10px;box-shadow:0 12px 30px #092c4024;z-index:30}
+.header #main-nav .nav-submenu a{display:block;padding:12px 14px;border:0;border-radius:6px;white-space:normal;font-size:14px;line-height:1.5}
+.header #main-nav .nav-submenu a:hover,.header #main-nav .nav-submenu a[aria-current="page"]{background:#edf5f6;color:#103d52}
+@media(max-width:760px){.header #main-nav{align-items:stretch}.nav-group{width:100%}.nav-group>summary{justify-content:space-between;padding:14px 0;border-top:1px solid #e1e9ed;font-size:16px}.nav-submenu{position:static;min-width:0;width:100%;max-width:none;margin:0 0 12px;padding:6px;background:#edf5f6;box-shadow:none}.header #main-nav .nav-submenu a{font-size:15px;padding:12px}.header #main-nav .nav-submenu a:hover,.header #main-nav .nav-submenu a[aria-current="page"]{background:#ddf5f0}}
